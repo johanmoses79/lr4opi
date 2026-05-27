@@ -45,7 +45,6 @@ class Member:
         """
         if not location_id:
             raise ValueError("location_id cannot be empty")
-
         if self.check_in and self.check_in.active:
             # Та сама локація — нічого не робимо
             if self.check_in.location_id == location_id:
